@@ -1,0 +1,76 @@
+{
+  "source_dataset": "PJME_hourly.csv",
+  "sql_engine": "duckdb",
+  "total_feature_rows": 145056,
+  "dev_rows": 136296,
+  "holdout_rows": 8760,
+  "cv_splits": 5,
+  "cv_test_hours": 2160,
+  "selected_best_model_by_cv": "LightGBM",
+  "rmse_reduction_vs_seasonal_naive_168h_pct": 93.31,
+  "holdout_leaderboard": [
+    {
+      "model": "LightGBM",
+      "MAE_MW": 245.17,
+      "RMSE_MW": 324.49,
+      "MAPE_pct": 0.775,
+      "WAPE_pct": 0.786,
+      "sMAPE_pct": 0.774,
+      "R2": 0.99713
+    },
+    {
+      "model": "XGBoost",
+      "MAE_MW": 251.54,
+      "RMSE_MW": 334.75,
+      "MAPE_pct": 0.794,
+      "WAPE_pct": 0.806,
+      "sMAPE_pct": 0.793,
+      "R2": 0.99695
+    },
+    {
+      "model": "HistGradientBoosting",
+      "MAE_MW": 268.41,
+      "RMSE_MW": 355.14,
+      "MAPE_pct": 0.848,
+      "WAPE_pct": 0.86,
+      "sMAPE_pct": 0.847,
+      "R2": 0.99656
+    },
+    {
+      "model": "LinearRegression",
+      "MAE_MW": 400.3,
+      "RMSE_MW": 533.52,
+      "MAPE_pct": 1.27,
+      "WAPE_pct": 1.283,
+      "sMAPE_pct": 1.27,
+      "R2": 0.99224
+    },
+    {
+      "model": "RidgeCV",
+      "MAE_MW": 400.38,
+      "RMSE_MW": 533.58,
+      "MAPE_pct": 1.271,
+      "WAPE_pct": 1.283,
+      "sMAPE_pct": 1.27,
+      "R2": 0.99224
+    },
+    {
+      "model": "SeasonalNaive_24h",
+      "MAE_MW": 2306.8,
+      "RMSE_MW": 3146.15,
+      "MAPE_pct": 7.32,
+      "WAPE_pct": 7.394,
+      "sMAPE_pct": 7.288,
+      "R2": 0.73019
+    },
+    {
+      "model": "SeasonalNaive_168h",
+      "MAE_MW": 3581.81,
+      "RMSE_MW": 4852.33,
+      "MAPE_pct": 11.218,
+      "WAPE_pct": 11.481,
+      "sMAPE_pct": 11.079,
+      "R2": 0.35819
+    }
+  ]
+}
