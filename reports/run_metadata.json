@@ -1,6 +1,6 @@
 {
   "source_dataset": "PJME_hourly.csv",
-  "sql_engine": "duckdb",
+  "sql_engine": "sqlite3",
   "total_feature_rows": 145056,
   "dev_rows": 136296,
   "holdout_rows": 8760,

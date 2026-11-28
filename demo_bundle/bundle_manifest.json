@@ -1,0 +1,8 @@
+{
+  "best_model_name": "LightGBM",
+  "source_dataset": "PJME_hourly.csv",
+  "holdout_start": "2017-08-03 01:00:00",
+  "holdout_end": "2018-08-03 00:00:00",
+  "holdout_hours": 8760,
+  "slice_hours": 9160
+}

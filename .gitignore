@@ -7,7 +7,7 @@ venv/
 env/
 .pytest_cache/
 
-# Data & Large Artifacts
+# Raw & Large Local Artifacts (keep demo_bundle/ tracked for Streamlit / HF Spaces)
 data/raw/*.csv
 data/processed/*.parquet
 data/processed/*.csv

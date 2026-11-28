@@ -1,7 +1,7 @@
 # Benchmark Summary
 
 - **Dataset:** `PJME_hourly.csv`
-- **SQL Engine:** `duckdb`
+- **SQL Engine:** `sqlite3`
 - **Validation:** 5-fold expanding-window `TimeSeriesSplit` (2,160h/fold) + untouched 8,760h final holdout
 - **Selected Model (by CV RMSE):** `LightGBM` (**93.31%** holdout RMSE reduction vs. 168h Seasonal Naive baseline)
 
